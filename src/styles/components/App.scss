@@ -1,0 +1,30 @@
+@import "../variables.scss";
+@import "../mixins.scss";
+
+.container {
+  width: 100%;
+  min-height: 100vh;
+  @include flex(column, center, center);
+  gap: 1.5rem;
+
+  p {
+    color: white;
+  }
+
+  h1 {
+    color: white;
+  }
+
+  .form-wrapper {
+    width: 425px;
+    height: fit-content;
+    border-radius: 10px;
+    background-color: #eef2f3;
+    padding: 1rem;
+  }
+
+  p:nth-child(4) {
+    width: 425px;
+    text-align: center;
+  }
+}
